@@ -18,6 +18,8 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   rules: {
+    'prettier/prettier': 'error',
+    semi: 0,
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
