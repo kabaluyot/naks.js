@@ -70,6 +70,20 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  methods: {
+    async getComments() {
+      try {
+        const response = await this.$socialRepository.GetComments()
+        console.log('RESPONSE', response)
+      } catch (err) {
+        console.log('ERROR', err)
+      }
+    }
+  },
+  mounted() {
+    // GET https://jsonplaceholder.typicode.com/comments
+    this.getComments()
   }
 }
 </script>

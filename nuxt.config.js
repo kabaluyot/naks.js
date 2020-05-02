@@ -1,7 +1,13 @@
 import colors from 'vuetify/es5/util/colors'
 
+require('dotenv').config()
+
 export default {
   mode: 'universal',
+  server: {
+    port: process.env.APP_PORT,
+    host: process.env.APP_HOST
+  },
   /*
    ** Headers of the page
    */
@@ -30,7 +36,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/repository', mode: 'client' }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -55,7 +61,14 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    debug: process.env.NODE_ENV !== 'production',
+    headers: {
+      common: {
+        Accept: 'application/json, text/plain, */*'
+      }
+    }
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
