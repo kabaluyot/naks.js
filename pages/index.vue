@@ -65,25 +65,34 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import task from '@simmo/task'
 
 export default {
   components: {
     Logo,
     VuetifyLogo
   },
-  methods: {
-    async getComments() {
-      try {
-        const response = await this.$socialRepository.GetComments()
-        console.log('RESPONSE', response)
-      } catch (err) {
-        console.log('ERROR', err)
-      }
-    }
-  },
   mounted() {
     // GET https://jsonplaceholder.typicode.com/comments
     this.getComments()
+  },
+  methods: {
+    /**
+     * Get all coments
+     *
+     * @returns
+     */
+    async getComments() {
+      const { error, data } = await task(this.$socialRepository.GetComments())
+      if (error) {
+        console.error('ERROR', error)
+
+        return
+      }
+
+      console.log('RESPONSE', data)
+      return
+    }
   }
 }
 </script>
