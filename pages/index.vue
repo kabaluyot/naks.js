@@ -71,6 +71,10 @@ export default {
     Logo,
     VuetifyLogo
   },
+  mounted() {
+    // GET https://jsonplaceholder.typicode.com/comments
+    this.getComments()
+  },
   methods: {
     async getComments() {
       try {
@@ -80,10 +84,6 @@ export default {
         console.log('ERROR', err)
       }
     }
-  },
-  mounted() {
-    // GET https://jsonplaceholder.typicode.com/comments
-    this.getComments()
   }
 }
 </script>
