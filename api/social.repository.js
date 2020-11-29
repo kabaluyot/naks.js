@@ -8,5 +8,5 @@ export default ($axios) => ({
    */
   GetComments() {
     return $axios.$get(`${API_URL}`)
-  }
+  },
 })

@@ -43,9 +43,7 @@
             <em><small>&mdash; John Leider</small></em>
           </div>
           <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
-          </a>
+          <a href="https://nuxtjs.org/" target="_blank"> Nuxt Documentation </a>
           <br />
           <a href="https://github.com/nuxt/nuxt.js" target="_blank">
             Nuxt GitHub
@@ -53,9 +51,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
+          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -69,7 +65,7 @@ import task from '@simmo/task'
 export default {
   components: {
     Logo,
-    VuetifyLogo
+    VuetifyLogo,
   },
   mounted() {
     // GET https://jsonplaceholder.typicode.com/comments
@@ -91,7 +87,7 @@ export default {
 
       console.log('RESPONSE', data)
       return
-    }
-  }
+    },
+  },
 }
 </script>
