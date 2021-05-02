@@ -70,6 +70,9 @@ export default {
   mounted() {
     // GET https://jsonplaceholder.typicode.com/comments
     this.getComments()
+
+    // print app name using runtime config
+    console.log('APP_NAME', this.$config.appName)
   },
   methods: {
     /**
