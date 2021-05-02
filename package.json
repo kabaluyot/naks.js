@@ -15,22 +15,21 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
-    "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@simmo/task": "0.0.1",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.15.4"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0-bridge.0",
-    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.1",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
     "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.3",

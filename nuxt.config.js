@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 export default {
   ssr: true,
   server: {
@@ -55,6 +53,16 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  /**
+   * Public runtime configs
+   */
+  publicRuntimeConfig: {
+    appName: process.env.APP_NAME,
+  },
+  /**
+   * Private runtime configs
+   */
+  privateRuntimeConfig: {},
   /*
    ** Customize the progress-bar color
    */
@@ -66,7 +74,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/repository', mode: 'client' }],
+  plugins: [{ src: '~/plugins/repository', ssr: false }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -84,8 +92,6 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
   ],
   /*
    ** Axios module configuration
