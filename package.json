@@ -20,7 +20,8 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "@simmo/task": "0.0.1",
     "nuxt": "^2.15.4",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "vue-toastification": "^1.7.14"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
