@@ -92,10 +92,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-<<<<<<< HEAD
     'vue-toastification/nuxt',
-=======
->>>>>>> 46c4830ac8d22e041da3bab58f3e1633e98afe27
   ],
   /*
    ** Axios module configuration
@@ -109,7 +106,6 @@ export default {
       },
     },
   },
-<<<<<<< HEAD
   toast: {
     transition: 'Vue-Toastification__fade',
     maxToasts: 20,
@@ -127,8 +123,6 @@ export default {
     icon: true,
     rtl: false,
   },
-=======
->>>>>>> 46c4830ac8d22e041da3bab58f3e1633e98afe27
   /**
    *  PWA module configuration
    *  https://pwa.nuxtjs.org/setup.html
