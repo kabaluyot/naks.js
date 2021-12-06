@@ -73,9 +73,12 @@ export default {
 
     // print app name using runtime config
     console.log('APP_NAME', this.$config.appName)
+<<<<<<< HEAD
 
     // Toast notification
     this.$toast.info('Hello')
+=======
+>>>>>>> 46c4830ac8d22e041da3bab58f3e1633e98afe27
   },
   methods: {
     /**
