@@ -41,6 +41,6 @@
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "stylelint": "^13.8.0",
-    "vue-jest": "^3.0.7"
+    "vue-jest": "^4.0.1"
   }
 }
