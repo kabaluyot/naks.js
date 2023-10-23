@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   ssr: true,
   server: {
@@ -94,6 +96,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     'vue-toastification/nuxt',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
